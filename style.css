@@ -1,43 +1,75 @@
-/*
-Error: Invalid CSS after "$M500px: ": expected expression (e.g. 1px, bold), was ";"
-        on line 11 of C:\Users\user\Documents\Game\Loja\RoundTwoShop\style.scss
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Montserrat, Arial;
+}
 
-6: $cor1: #192E59;
-7: $cor2: #2D3073;
-8: $cor3: #416EF2;
-9: $cor4: #F2D888;
-10: $cor5: #F29472;
-11: $M500px: ;
-12: $M900px: ;
-13: 
-14: 
-15: 
-16: * {
+header {
+  display: flex;
+  justify-content: space-between;
+  background: #F2D888;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+header img {
+  width: 15%;
+}
+header nav ul {
+  padding-top: 15px;
+  display: inline-block;
+  float: right;
+  margin: 25px;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #416EF2;
+  text-shadow: 1px 1px 1px black;
+  font-size: 18px;
+  font-weight: bold;
+}
+header nav ul li a:hover {
+  color: #2D3073;
+  transition: 0.5s;
+}
 
-Backtrace:
-C:\Users\user\Documents\Game\Loja\RoundTwoShop\style.scss:11
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/lexer.rb:231:in `expected!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:723:in `assert_expr'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:68:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1134:in `sass_script'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:642:in `variable'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-C:/Program Files (x86)/Koala/bin/sass:22:in `load'
-C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"$M500px: \": expected expression (e.g. 1px, bold), was \";\"\A         on line 11 of C:\Users\user\Documents\Game\Loja\RoundTwoShop\style.scss\A \A 6: $cor1: #192E59;\A 7: $cor2: #2D3073;\A 8: $cor3: #416EF2;\A 9: $cor4: #F2D888;\A 10: $cor5: #F29472;\A 11: $M500px: ;\A 12: $M900px: ;\A 13: \A 14: \A 15: \A 16: * {"; }
+body {
+  background-image: url();
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: 100%;
+}
+
+.video video {
+  margin-top: 100px;
+  width: 100%;
+}
+
+main {
+  margin-top: 150px;
+}
+main h1 {
+  text-align: center;
+}
+main p {
+  text-align: center;
+}
+
+footer {
+  background-color: #192E59;
+}
+footer p {
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 1150px) {
+  * {
+    box-sizing: border-box;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
