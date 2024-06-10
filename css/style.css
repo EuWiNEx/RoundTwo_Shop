@@ -1,39 +1,6 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: Montserrat, Arial;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  background: #F2D888;
-  width: 100%;
-  position: fixed;
-  top: 0;
-}
-header img {
-  width: 15%;
-}
-header nav ul {
-  padding-top: 15px;
-  display: inline-block;
-  float: right;
-  margin: 25px;
-}
-header nav ul li {
-  list-style: none;
-}
-header nav ul li a {
-  text-decoration: none;
-  color: #416EF2;
-  text-shadow: 1px 1px 1px black;
-  font-size: 18px;
-  font-weight: bold;
-}
-header nav ul li a:hover {
-  color: #2D3073;
-  transition: 0.5s;
 }
 
 body {
@@ -43,33 +10,63 @@ body {
   background-size: 100%;
 }
 
-.video video {
-  margin-top: 100px;
-  width: 100%;
+.navbar {
+  background: #40152D;
 }
-
-main {
-  margin-top: 150px;
+.navbar .navbar-brand img {
+  width: 150px;
 }
-main h1 {
-  text-align: center;
+.navbar .navbar-nav .nav-link.show {
+  color: #649563;
+  text-decoration: underline;
+  text-shadow: 2px 0px 0px #174015;
 }
-main p {
-  text-align: center;
+.navbar .dropdown-menu {
+  border-top: 5px solid #649563;
+  border-bottom: 5px solid #649563;
+  border-radius: 0;
+  background: #174015;
+}
+.navbar .dropdown-menu .dropdown-item {
+  font-family: Jaro, Arial;
+  font-size: 20px;
+  color: #649563;
+}
+.navbar .dropdown-menu .dropdown-item:hover {
+  color: #174015;
+  background: #649563;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+  font-family: Jaro, Arial;
+  font-size: 25px;
+  font-weight: bold;
+  color: #A63247;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #649563;
+  text-shadow: 2px 0px 0px #174015;
+}
+.navbar .navbar-nav .dropdown .dropdown-toggle {
+  color: #649563;
+}
+.navbar .navbar-nav .dropdown .dropdown-toggle:hover {
+  color: #649563;
+  text-decoration: underline;
 }
 
 footer {
-  background-color: #192E59;
+  background-color: #40152D;
 }
 footer p {
+  font-family: "Josefin Slab", Arial;
   text-align: center;
   color: white;
+  font-weight: bold;
 }
 
-@media (max-width: 1150px) {
-  * {
-    box-sizing: border-box;
-  }
+.img-erro {
+  display: flex;
+  margin: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
